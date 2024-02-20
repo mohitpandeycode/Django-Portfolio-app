@@ -201,6 +201,10 @@ section .header{
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
 }
+.info{
+    display: flex;
+    gap: ;
+}
 
 .features .card{
     background-color: #27272a;

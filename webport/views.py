@@ -6,3 +6,7 @@ def index(request):
     projects = Project.objects.all()
     data = {'project':projects}
     return render(request , 'index.html',data)
+
+def projectInfo(request,info):
+    projectinfo = Project.objects.filter(title = info)
+    return render(request,'info.html',{'info':projectinfo})
