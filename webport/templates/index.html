@@ -20,16 +20,16 @@
 
         <ul class="nav-links">
             <li class="link">
-                <a href="#">Home</a>
+                <a href="/">Home</a>
             </li>
             <li id="link1" class="link">
-                <a href="#">Projects<i class="ri-arrow-down-s-line"></i></a>
+                <a>Projects<i class="ri-arrow-down-s-line"></i></a>
             </li>
             <li id="link2" class="link">
-                <a href="#">Skills<i class="ri-arrow-down-s-line"></i></a>
+                <a>Skills<i class="ri-arrow-down-s-line"></i></a>
             </li>
             <li id="link3" class="link">
-                <a href="#">Contact me<i class="ri-arrow-down-s-line"></i></a>
+                <a>Contact me<i class="ri-arrow-down-s-line"></i></a>
             </li>
         </ul>
         <button class="btn">Hire Me</button>
@@ -86,12 +86,12 @@
         <h2 class="header">Projects</h2>
         <div class="features">
             {% for data in project %}
-            <div class="card">
+           <div class="card" id="cardDiv" >
                 <img src="media/{{ data.image }}" alt="" />
                 <h4 style="text-shadow: 4px 4px 8px green; color: aqua;">{{ data.title }}</h4>
                 <p><div class="preview">{{ data.desciption|safe|truncatechars:95 }}</div></p>
-                <a href="About/{{ data.title }}"><i class="ri-eye-fill"></i> See more <i class="ri-arrow-right-line"></i></a><br>
-                <a href="{{ data.link }}"><i class="ri-github-fill"></i> View Project <i class="ri-arrow-right-line"></i></a>
+                <a href="About/{{ data.slug }}"><i class="ri-eye-fill"></i> See more <i class="ri-arrow-right-line"></i></a><br>
+                <a href="{{ data.link }}"><i class="ri-github-fill"></i> View Code <i class="ri-arrow-right-line"></i></a>
             </div>
             {% endfor %}
         </div>

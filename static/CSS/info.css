@@ -5,4 +5,41 @@
 }
 .carousel{
     border: 2px solid rgb(165, 165, 165);
+
+}
+.blurr{
+    position: absolute;
+    right: 100px;
+    box-shadow: 0 0 1000px 50px #ac1dd8;
+    z-index: -100;
+}
+.carousel-caption {
+    position: absolute;
+    
+    bottom: 0;
+
+    padding-top:0;
+    padding-bottom:0;
+    padding: 10px;
+    border: 1px solid #00ffff;
+    border-radius: 10px;
+    color: #fff;
+    text-align: start;
+    background-color:#323232f0;
+}
+.carousel-caption a:hover{
+    box-shadow: 2px 2px 10px rgb(255, 183, 0);
+    color: white;
+}
+.featurette-heading{
+    text-shadow: 4px 4px 8px green;
+    color: aqua;
+}
+.featurette h3{
+    color: rgb(0, 137, 249);
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
 }

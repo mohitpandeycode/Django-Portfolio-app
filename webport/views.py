@@ -8,5 +8,6 @@ def index(request):
     return render(request , 'index.html',data)
 
 def projectInfo(request,info):
-    projectinfo = Project.objects.filter(title = info)
-    return render(request,'info.html',{'info':projectinfo})
+    projectinfo = Project.objects.get(slug = info)
+    images = ProjectImg.objects.filter(project = projectinfo)
+    return render(request,'info.html',{'info':projectinfo,'img':images})
