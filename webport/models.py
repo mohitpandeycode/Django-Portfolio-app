@@ -10,6 +10,11 @@ class Project(models.Model):
     image = models.ImageField(upload_to='Projectimage/')
     def __str__(self) -> str:
         return self.title
+    
+class Resume(models.Model):
+    resumeFile = models.FileField(upload_to='Resumes/')
+    profilepic = models.ImageField(upload_to='Resumes/',null=True)
+
 
 class ProjectImg(models.Model):
     project = models.ForeignKey(Project,on_delete=models.CASCADE)

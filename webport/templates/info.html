@@ -18,7 +18,7 @@
 <body>
     <nav>
         <div class="nav-logo">
-            <a href="index.html"><img src="/static/images/logo.png"
+            <a href="/"><img src="/static/images/logo.png"
                     style="filter: drop-shadow(4px 4px 9px rgb(107, 40, 165));" /></a>
         </div>
 
@@ -30,13 +30,13 @@
                 <a href="{{info.link}}">GithHub<i class="ri-arrow-down-s-line"></i></a>
             </li>
             <li id="link2" class="link">
-                <a href="">About Project<i class="ri-arrow-down-s-line"></i></a>
+                <a href="#">About<i class="ri-arrow-down-s-line"></i></a>
             </li>
             <li id="link3" class="link">
-                <a href="">Contact me<i class="ri-arrow-down-s-line"></i></a>
+                <a href="#">Contact<i class="ri-arrow-down-s-line"></i></a>
             </li>
         </ul>
-        <button class="btn">Hire Me</button>
+        <a href="/" class="btn">Go Back</a>
     </nav>
 
     <hr style="color: white;">
@@ -50,8 +50,9 @@
                 <img src="/media/{{ project_img.firstImg }}" class="d-block w-100" height="600" alt="First Image">
                 <div class="carousel-caption text-start">
                     <h1>{{info.title}}</h1>
-                    <p>Explore the {{info.title}} project image gallery click on live demo button to see the project demo...</p>
-                    <p><a class="btn btn-info" href="#">Live Demo</a></p>
+                    <p>Explore the {{info.title}} project image gallery click on live demo button to see the project
+                        demo...</p>
+                    <a class="btn btn-info" href="#">Live Demo</a>
                 </div>
             </div>
             <div class="carousel-item">
@@ -60,7 +61,7 @@
             <div class="carousel-item">
                 <img src="/media/{{ project_img.thirdImg }}" class="d-block w-100" height="600" alt="Third Image">
             </div>
-        {% endfor %}
+            {% endfor %}
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="prev">
@@ -74,25 +75,28 @@
         </button>
     </div>
 
+    <a class=" demo btn btn-info" href="#">Live Demo</a>
 
     <!-- project info ********************* -->
-    <div class="info container">
-        <span class="blurr"></span>
-        <span class="blurr"></span>
-        <div class="container marketing">
-            <section class="container" data-aos-offset="220" data-aos="fade-up" data-aos-duration="800">
+    <section class="container information" data-aos-offset="220" data-aos="fade-up" data-aos-duration="800">
+        <div class="info container">
+            <span class="blurr"></span>
+            <span class="blurr"></span>
+            <div class="container marketing">
                 <h2 class="header">About Projects</h2>
-            
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="continer">
-                    <h1 class="featurette-heading">{{info.title}}</h1>
-                    <p class="lead "><div class="text-light">{{info.desciption | safe }}</div></p>
+
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="continer">
+                        <h1 class="featurette-heading">{{info.title}}</h1>
+                        <p class="lead ">
+                        <div class="text-light">{{info.desciption | safe }}</div>
+                        </p>
+                    </div>
+                </div>
             </div>
-            </div>
-        </section>
         </div>
-    </div>
+    </section>
 
 
     <hr style="color: white;">

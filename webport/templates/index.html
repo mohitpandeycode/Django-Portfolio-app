@@ -14,7 +14,7 @@
 <body>
     <nav>
         <div class="nav-logo">
-            <a href="index.html"><img src="/static/images/logo.png"
+            <a href="/"><img src="/static/images/logo.png"
                     style="filter: drop-shadow(4px 4px 9px rgb(107, 40, 165));" /></a>
         </div>
 
@@ -64,7 +64,9 @@
                     <a href="https://twitter.com/MPandey1795"><img src="/static/images/twitter.png" /></a>
                 </div>
             </div>
-            <a href="resume.pdf"><button class="btn">Get My Resume</button></a>
+            {% for img in resume %}
+            <a href="/media/{{ img.resumeFile}}"><button class="btn">Get My Resume</button></a>
+            {% endfor %}
         </div>
         <div class="image">
             <div class="circle"></div>

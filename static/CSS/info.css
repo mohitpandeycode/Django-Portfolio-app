@@ -1,45 +1,125 @@
-.nextprev{
+.nextprev {
     background-color: black;
     padding: 20px;
     border-radius: 20px;
 }
-.carousel{
+
+.carousel {
     border: 2px solid rgb(165, 165, 165);
 
 }
-.blurr{
+
+.blurr {
     position: absolute;
     right: 100px;
     box-shadow: 0 0 1000px 50px #ac1dd8;
     z-index: -100;
 }
+
 .carousel-caption {
     position: absolute;
-    
+
     bottom: 0;
 
-    padding-top:0;
-    padding-bottom:0;
+    padding-top: 0;
+    padding-bottom: 0;
     padding: 10px;
     border: 1px solid #00ffff;
     border-radius: 10px;
     color: #fff;
     text-align: start;
-    background-color:#323232f0;
+    background-color: #323232f0;
 }
-.carousel-caption a:hover{
+
+.carousel-caption a:hover {
     box-shadow: 2px 2px 10px rgb(255, 183, 0);
     color: white;
 }
-.featurette-heading{
+
+.featurette-heading {
     text-shadow: 4px 4px 8px green;
     color: aqua;
 }
-.featurette h3{
+
+.featurette h3 {
     color: rgb(0, 137, 249);
 }
+
 .container {
     max-width: 1200px;
     margin: auto;
     padding: 1rem;
+}
+
+.demo {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    #carouselExampleAutoplaying {
+        height: 55vh;
+    }
+
+    #carouselExampleAutoplaying img {
+        height: 53vh;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+    #carouselExampleAutoplaying {
+        height: 65vh;
+    }
+
+    #carouselExampleAutoplaying img {
+        height: 63vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #carouselExampleAutoplaying {
+        height: 45vh;
+        width: 95vw;
+        margin: auto;
+    }
+
+    #carouselExampleAutoplaying img {
+        height: 42vh;
+        width: 95vw;
+        margin: auto;
+    }
+
+    #carouselExampleAutoplaying .carousel-caption {
+        display: none;
+    }
+
+    .demo {
+        display: block;
+        margin: 20px;
+        max-width: 100px;
+        height: 40px;
+        font-size: 15px;
+        padding: 9px;
+    }
+
+    .py-2 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .px-4 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .px-4 {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .information {
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: 5px;
+    }
 }
