@@ -91,7 +91,7 @@
            <div class="card" id="cardDiv" >
                 <img src="media/{{ data.image }}" alt="" />
                 <h4 style="text-shadow: 4px 4px 8px green; color: aqua;">{{ data.title }}</h4>
-                <p><div class="preview">{{ data.desciption|safe|truncatechars:95 }}</div></p>
+                <p><div class="preview">{{ data.desciption | truncatechars:90 }}</div></p>
                 <a href="About/{{ data.slug }}"><i class="ri-eye-fill"></i> See more <i class="ri-arrow-right-line"></i></a><br>
                 <a href="{{ data.link }}"><i class="ri-github-fill"></i> View Code <i class="ri-arrow-right-line"></i></a>
             </div>

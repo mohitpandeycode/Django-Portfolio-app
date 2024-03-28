@@ -5,7 +5,8 @@ from tinymce.models import HTMLField
 class Project(models.Model):
     title = models.CharField(max_length=50)
     slug = models.CharField(max_length=50,default = '')
-    link = models.CharField(max_length=500,default="")
+    githubLink = models.CharField(max_length=500,default="")
+    liveLink = models.CharField(max_length=500,default="", null=True, blank=True)
     desciption = HTMLField()
     image = models.ImageField(upload_to='Projectimage/')
     def __str__(self) -> str:
