@@ -23,16 +23,16 @@ link2.addEventListener('click', () => {
 
 
 
-const link5 = document.getElementById("link5");
-const link6 = document.getElementById("link6");
+const link7 = document.getElementById("link7");
+const link8 = document.getElementById("link8");
 
 
-link5.addEventListener('click', () => {
+link7.addEventListener('click', () => {
   // Scroll to the second element with "header" class
   scrollToElement('.info');
 });
 
-link6.addEventListener('click', () => {
+link8.addEventListener('click', () => {
     scrollToElement('.column');
 });
 
@@ -44,7 +44,7 @@ function moveBottom() {
 }
 
 // Set a timeout to call moveBottom after 5 seconds
-let timeoutId = setTimeout(moveBottom, 3000);
+let timeoutId = setTimeout(moveBottom, 4000);
 
 // Function to reset the element to bottom 0 when the user clicks on the screen
 function resetBottom() {
