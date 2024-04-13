@@ -1,6 +1,6 @@
-.nextprev {
-    background-color: black;
-    padding: 20px;
+.nextprev{
+    background-color: rgba(0, 0, 0, 0.658);
+    padding: 15px;
     border-radius: 20px;
 }
 
@@ -77,13 +77,13 @@
 
 @media screen and (max-width: 600px) {
     #carouselExampleAutoplaying {
-        height: 45vh;
+        height: 35vh;
         width: 100vw;
         margin: auto;
     }
 
     #carouselExampleAutoplaying img {
-        height: 42vh;
+        height: 32vh;
         width: 95vw;
         margin: auto;
     }
