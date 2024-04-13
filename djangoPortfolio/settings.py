@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-5nxl4ax3wl*t_8cb73%bxi4kk5w*j6=$_(#5++jt0vby(w*l0n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://mohitpandey.up.railway.app','http://mohitpandey.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['https://mohitpandey.up.railway.app','http://mohitpandey.up.railway.app']
+ALLOWED_HOSTS = ['mohitpandey.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['mohitpandey.up.railway.app']
 
 
 # Application definition
