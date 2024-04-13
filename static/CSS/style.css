@@ -8,6 +8,29 @@
     box-sizing: border-box;
 }
 
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 5px;
+     /* Width of the scrollbar */
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #575757; /* Background color of the scrollbar track */
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background: #00f2ffdb; /* Color of the scrollbar handle */
+    border-radius: 50px; /* Rounded corners of the scrollbar handle */
+    
+}
+
+/* Hover state of the scrollbar handle */
+::-webkit-scrollbar-thumb:hover {
+    background: #00ecd0; /* Color of the scrollbar handle on hover */
+}
+
 img {
     width: 100%;
     display: flex;
@@ -69,6 +92,20 @@ nav {
 .link a:hover::after {
     width: 100%;
 }
+
+
+.link2 a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link2 a:hover {
+    color: #04ff00;
+    font-size: 1.8rem;
+    transition: 0.3s ease;
+}
+
 
 .btn {
     padding: 1rem 2rem;
@@ -449,8 +486,36 @@ footer .column>a:hover {
 .btnn:hover {
     background: #0d38af;
 }
+.fix{
+    border: 2px solid white;
+    box-shadow: -1px -1px 18px 0px #00ffb4b8;
+    border-radius: 10px 10px 0 0;
+    background-color: #18181b;
+    width: 100vw;
+    height: 46px;
+    font-size: 25px;
+    position: fixed;
+    z-index: 10;
+    bottom: -50px;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+.another{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+#theme {
+    font-size: 28px;
+}
 
 @media screen and (max-width: 600px) {
+    .fix{
+        bottom: 0;
+        display: block;
+
+    }
     .contact-form {
         flex-direction: column;
     }

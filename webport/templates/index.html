@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to Mohit Pandey Profile">
     <link rel="shortcut icon" type="x-icon" href="/static/images/mlogo.jpg" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" />
@@ -14,7 +15,7 @@
 <body>
     <nav>
         <div class="nav-logo">
-            <a href="/"><img src="/static/images/logo.png"
+            <a href="/"><img alt="logo" src="/static/images/logo.png"
                     style="filter: drop-shadow(4px 4px 9px rgb(107, 40, 165));" /></a>
         </div>
 
@@ -32,8 +33,24 @@
                 <a>Contact me<i class="ri-arrow-down-s-line"></i></a>
             </li>
         </ul>
-        <button class="btn">Hire Me</button>
+        <a href="mailto:mp7698921@gmail.com"><button class="btn">Hire Me</button></a> 
     </nav>
+    <div class="fix" id="fix">
+        <ul class="nav-links another">
+            <li class="link2">
+                <a title="Home" href="/"><i class="ri-home-fill"></i></a>
+            </li>
+            <li id="link4" class="link2">
+                <a title="Projects"><i class="ri-lightbulb-flash-fill"></i></a>
+            </li>
+            <li id="link5" class="link2">
+                <a title="Skills"><i class="ri-magic-fill"></i></a>
+            </li>
+            <li id="link6" class="link2">
+                <a title="Contact"><i class="ri-phone-fill"></i></a>
+            </li>
+        </ul>
+    </div>
 
     <header class="container">
         <div class="content">
@@ -50,18 +67,18 @@
 
             <div class="socials">
                 <div class="logos">
-                    <a href="https://github.com/mohitpandeycode?tab=repositories"><img
+                    <a href="https://github.com/mohitpandeycode?tab=repositories"><img alt="github"
                             src="/static/images/github.png" /></a>
                 </div>
                 <div class="logos">
-                    <a href="https://www.linkedin.com/in/mohit-pandey-a14573268"><img
+                    <a href="https://www.linkedin.com/in/mohit-pandey-a14573268"><img alt="linkedin"
                             src="/static/images/linkedin.png" /></a>
                 </div>
                 <div class="logos">
-                    <a href="mailto:mp7698921@gmail.com"><img src="/static/images/email.png" /></a>
+                    <a href="mailto:mp7698921@gmail.com"><img alt="mail" src="/static/images/email.png" /></a>
                 </div>
                 <div class="logos">
-                    <a href="https://twitter.com/MPandey1795"><img src="/static/images/twitter.png" /></a>
+                    <a href="https://twitter.com/MPandey1795"><img alt="twitter" src="/static/images/twitter.png" /></a>
                 </div>
             </div>
             {% for img in resume %}
@@ -70,18 +87,13 @@
         </div>
         <div class="image">
             <div class="circle"></div>
-            <img src="/static/images/pic.png" />
+            <img alt="profile" src="/static/images/pic.png" />
         </div>
     </header>
 
     <section class="container" data-aos-offset="200" data-aos="fade-up">
         <h2 class="header">About me</h2>
-        <p id="ab">"Hello, I'm Mohit Pandey, passionate about Python and specializing in Django for web development.
-            Python fascinated me with its versatility and power, becoming my primary tool for crafting efficient
-            solutions. Exploring web development, I've delved into HTML, CSS, and JavaScript to design user-friendly
-            interfaces. However, my expertise lies in Django, where I excel in building robust and scalable web
-            applications. I thrive on curiosity, constantly seeking collaborations to innovate and create impactful tech
-            solutions."</p>
+        <p id="ab">"Hey I'm Mohit Pandey, a passionate Django Stack Developer with a strong foundation in Python. Python's versatility and power initially drew me in, and I now leverage it to build efficient and scalable web applications using Django. While I'm proficient in HTML, CSS, and JavaScript for crafting user interfaces, my expertise lies in the back-end. I excel at designing and implementing robust Django applications that can handle complex functionalities. Driven by curiosity, I actively seek collaborations to push boundaries and develop innovative tech solutions."</p>
     </section>
 {{info}}
     <section class="container" data-aos-offset="220" data-aos="fade-up" data-aos-duration="800">
@@ -89,11 +101,11 @@
         <div class="features">
             {% for data in project %}
            <div class="card" id="cardDiv" >
-                <img src="media/{{ data.image }}" alt="" />
+                <img src="media/{{ data.image }}" alt="projectimage" />
                 <h4 style="text-shadow: 4px 4px 8px green; color: aqua;">{{ data.title }}</h4>
                 <p><div class="preview">{{ data.desciption | truncatechars:90 }}</div></p>
                 <a href="About/{{ data.slug }}"><i class="ri-eye-fill"></i> See more <i class="ri-arrow-right-line"></i></a><br>
-                <a href="{{ data.link }}"><i class="ri-github-fill"></i> View Code <i class="ri-arrow-right-line"></i></a>
+                <a href="{{ data.githubLink }}" target="_blank"><i class="ri-github-fill"></i> View Code <i class="ri-arrow-right-line"></i></a>
             </div>
             {% endfor %}
         </div>
@@ -108,8 +120,8 @@
                 <h4>Web Technologies</h4>
                 <p style="color: aqua;">
                     • HTML5, CSS, JavaScript.<br />
-                    • Bootstrap, Django<br />
-                    • Djngo Rest Framework
+                    • React, Tailwind, Django<br />
+                    • Django Rest Framework
                 </p>
             </div>
 
@@ -128,7 +140,7 @@
                 <h4>Database</h4>
                 <p style="color: aqua;">
                     • MySQL<br />
-                    • My SQLite<br />
+                    • PostgreSQL<br />
                     • ORM
                 </p>
             </div>
@@ -148,7 +160,7 @@
         <span class="blur"></span>
         <div class="column">
             <div class="logo">
-                <img src="/static/images/logo.png" style="filter: drop-shadow(4px 4px 9px red);" />
+                <img alt="logo" src="/static/images/logo.png" style="filter: drop-shadow(4px 4px 9px red);" />
             </div>
             <p class="email">
                 <i class="ri-mail-send-line"></i> <b><u>Email</u>:-</b> <span>mp7698921@gmail.com</span>
@@ -186,7 +198,7 @@
         </div>
     </footer>
 
-    <div class="copyright">Copyright © 2023 Mohit Pandey. All Rights Reserved.</div>
+    <div class="copyright">Copyright © 2024 Mohit Pandey. All Rights Reserved.</div>
 
     <script src="/static/JS/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
