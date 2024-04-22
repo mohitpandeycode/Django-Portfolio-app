@@ -25,3 +25,9 @@ class ProjectImg(models.Model):
 
     def __str__(self) -> str:
         return f"Images of {self.project.title}"
+
+class Totalvisiters(models.Model):
+    counting = models.IntegerField(default=0)
+
+    def __str__(self):
+        return f"Visiters is {self.counting}"
